@@ -5,5 +5,5 @@
       user:
         name: "{{name}}"
         shell: /bin/bash
-        uid: 1010
+        uid: "{{uid}}"
         password: "{{ password | password_hash('sha512') }}"
