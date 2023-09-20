@@ -5,7 +5,7 @@
   tasks:
     - name: crer usuario
       user:
-        name: mquser
+        name: "{{name}}"
         shell: /bin/bash
         uid: 1010
         password: "{{ password | password_hash('sha512') }}"
