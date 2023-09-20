@@ -1,7 +1,5 @@
 ---
 - hosts: localhost
-  vars:
-    password: "1234"
   tasks:
     - name: crer usuario
       user:
