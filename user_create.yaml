@@ -1,0 +1,11 @@
+---
+- hosts: localhost
+  vars:
+    password: "1234"
+  tasks:
+    - name: crer usuario
+      user:
+        name: mquser
+        shell: /bin/bash
+        uid: 1010
+        password: "{{ password | password_hash('sha512') }}"
